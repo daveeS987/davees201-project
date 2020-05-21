@@ -1,0 +1,205 @@
+main {
+  width: 1000px;
+  min-height: 700px;
+  margin: 10px auto;
+  background-color: rgba(143, 143, 143, 0.5);
+  border-radius: 15px;
+  border: 2px solid blue;
+  margin-bottom: 140px;
+}
+
+h2 {
+  color: rgb(52, 52, 52);
+  border-radius: 12px;
+}
+
+div {
+  margin: 10px auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+h3 {
+  font-size: 35px;
+  padding: 25px 10px;
+  color: rgb(52, 52, 52);
+}
+
+#statusBarContainer {
+  width: 980px;
+  height: 70px;
+  margin: 10px auto;
+  /* overflow: auto; */
+  border-radius: 12px;
+  border: 2px solid blue;
+}
+
+#statusBarContainer>h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  margin-top: 0px;
+  padding: 2px;
+  float: left;
+  /* overflow: auto; */
+}
+
+#barContainer {
+  width: 750px;
+  height: 70px;
+  margin-top: 0px;
+  float: left;
+  overflow: auto;
+}
+
+#correct-bars li {
+  background-color: rgb(43, 255, 0);
+  width: 70px;
+  padding-top: 5px;
+  height: 60px;
+  display: inline-block;
+  float: left;
+  margin: 2px;
+}
+
+#nextLevel {
+  float: right;
+}
+
+#timer {
+  width: 160px;
+  height: 160px;
+  margin: 0px auto;
+  margin-left: 20px;
+  overflow: auto;
+  font-family: 'Rajdhani', sans-serif;
+  float: left;
+  border-radius: 12px;
+  border: 2px solid rgb(52, 52, 52);
+  ;
+}
+
+#code-block>h2 {
+  font-size: 35px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: rgba(255, 255, 255, 0.82);
+}
+
+#code-block {
+  width: 600px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 3px solid #da0078;
+}
+
+#resultMessageContainer {
+  width: 160px;
+  height: 160px;
+  margin: 0px auto;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Rajdhani', sans-serif;
+  overflow: auto;
+  border-radius: 12px;
+  border: 2px solid rgb(52, 52, 52);
+}
+
+#resultMessage {
+  color: white;
+}
+
+#user-input-box {
+  width: 600px;
+  height: 100px;
+  padding: 10px 0px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 3px solid #da0078;
+}
+
+#enterButton {
+  color: white;
+  background: blue;
+  box-shadow: 0 10px 0 rgb(187, 187, 187);
+}
+
+#nextButtonContainer {
+  background-color: transparent;
+}
+
+#nextButton {
+  margin-top: 0px;
+  visibility: hidden;
+  color: black;
+  background: rgb(27, 164, 0);
+  box-shadow: 0 8px 0 rgb(255, 255, 255);
+  width: 250px;
+  height: 50px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+#see-results {
+  height: 30px;
+  width: 250px;
+  padding-top: 6px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: 'Rajdhani', sans-serif;
+  border-radius: 10px;
+  border: 2px solid blue;
+}
+
+#see-results a {
+  font-size: 20px;
+}
+
+h4 {
+  color: rgb(52, 52, 52);
+  font-size: 40px;
+  padding: 5px 40px;
+}
+
+#congratsMessage {
+  font-size: 45px;
+  padding-top: 20px;
+}
+
+button {
+  width: 150px;
+  border: 0;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  font: inherit;
+  margin: 5px auto;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+button, input, select, textarea {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 100%;
+}
+
+label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+}
+
+form input {
+  width: 75%;
+  margin-top: 5px;
+}
