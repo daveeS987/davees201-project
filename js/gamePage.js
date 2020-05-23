@@ -7,7 +7,7 @@ var statusBar = document.getElementById('correct-bars');
 var timerDisplay = document.getElementById('timer');
 var timeBlock = document.getElementById('counter');
 
-var resultDisplay = document.getElementById('resultMessageContainer');
+// var resultDisplay = document.getElementById('resultMessageContainer');
 var resultMessageContainer = document.getElementById('resultMessageContainer');
 var resultMessage = document.getElementById('resultMessage');
 
