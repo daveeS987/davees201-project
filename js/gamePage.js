@@ -1,25 +1,30 @@
 'use strict';
 
 // Elements
-var codeBlock = document.getElementById('codeBlock-img');
-var userAnswerForm = document.getElementById('userAnswerForm');
-var resultMessage = document.getElementById('resultMessage');
-var enterButton = document.getElementById('enterButton');
-var nextButton = document.getElementById('nextButton');
-var timeBlock = document.getElementById('counter');
+
+var statusBarContainer = document.getElementById('statusBarContainer');
 var statusBar = document.getElementById('correct-bars');
+var timerDisplay = document.getElementById('timer');
+var timeBlock = document.getElementById('counter');
+
+var resultDisplay = document.getElementById('resultMessageContainer');
 var resultMessageContainer = document.getElementById('resultMessageContainer');
+var resultMessage = document.getElementById('resultMessage');
+
+var codeBlockDisplay = document.getElementById('code-block');
+var codeBlock = document.getElementById('codeBlock-img');
+var userInputBox = document.getElementById('user-input-box');
+var userAnswerForm = document.getElementById('userAnswerForm');
+var enterButton = document.getElementById('enterButton');
+var nextButtonContainer = document.getElementById('nextButtonContainer');
+var nextButton = document.getElementById('nextButton');
+
 var congratsMessage = document.getElementById('congratsMessage');
 var congratsMessage2 = document.getElementById('congratsMessage2');
 var goToResultPageContainer = document.getElementById('see-results');
-var statusBarContainer = document.getElementById('statusBarContainer');
-var timerDisplay = document.getElementById('timer');
-var resultDisplay = document.getElementById('resultMessageContainer');
-var codeBlockDisplay = document.getElementById('code-block');
-var userInputBox = document.getElementById('user-input-box');
-var nextButtonContainer = document.getElementById('nextButtonContainer');
-var timeLeft = 30;// Can manualy enter time left here
-var correctAnswerAmount = 4;// Manually enter correct amount to get to result page
+
+var timeLeft = 30; // Can manualy enter time left here
+var correctAnswerAmount = 4; // Manually enter correct amount to get to result page
 
 // Listeners
 userAnswerForm.addEventListener('submit', handleSubmitAnswer);
@@ -36,7 +41,6 @@ function CodeBlockPair(codeBlockImg, answer) {
   this.answer = answer;
   codeBlockWithAnswers.push(this);
 }
-
 
 new CodeBlockPair('../codeBlock-images/q1-a4.png', [4]);
 new CodeBlockPair('../codeBlock-images/q2-a7.png', [7]);
@@ -59,7 +63,6 @@ new CodeBlockPair('../codeBlock-images/q28-a7.png', [7]);
 new CodeBlockPair('../codeBlock-images/q29-a5.png', [5]);
 new CodeBlockPair('../codeBlock-images/q30-a4.png', [4]);
 
-
 // Use for Testing Website
 // new CodeBlockPair('../codeBlock-images/A1.png', [1]);
 // new CodeBlockPair('../codeBlock-images/A5.png', [5]);
@@ -71,7 +74,6 @@ new CodeBlockPair('../codeBlock-images/q30-a4.png', [4]);
 function randomizer(max) {
   return Math.floor(Math.random() * max);
 }
-
 
 var previousIndex;
 function displayRandomCodeBlock() {
@@ -85,13 +87,11 @@ function displayRandomCodeBlock() {
   previousIndex = codeBlockIndex;
 }
 
-
 function initializeGame() {
   loadLocalStorage();
   displayRandomCodeBlock();
   timer(timeLeft);
 }
-
 
 function handleSubmitAnswer(event) {
   event.preventDefault();
@@ -120,7 +120,6 @@ function handleSubmitAnswer(event) {
   }
 }
 
-
 function handleNextQuestionButton(event) {
   event.preventDefault();
   timeBlock.textContent = '';
@@ -132,7 +131,6 @@ function handleNextQuestionButton(event) {
   resultMessage.textContent = '';
   resultMessageContainer.style.backgroundColor = 'white';
 }
-
 
 function timer(seconds) {
   var timeleft = seconds;
@@ -151,18 +149,16 @@ function timer(seconds) {
   }, 1000);
 }
 
-
 function addElementToPage(elementType, content, parentEl) {
   var newEl = document.createElement(elementType);
   newEl.textContent = content;
   parentEl.appendChild(newEl);
 }
 
-
 function displayCongratsMessage() {
   statusBarContainer.style.display = 'none';
   timerDisplay.style.display = 'none';
-  resultDisplay.style.display = 'none';
+  resultMessageContainer.style.display = 'none';
   codeBlockDisplay.style.display = 'none';
   userInputBox.style.display = 'none';
   nextButtonContainer.style.display = 'none';
