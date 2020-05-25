@@ -6,11 +6,8 @@ var statusBarContainer = document.getElementById('statusBarContainer');
 var statusBar = document.getElementById('correct-bars');
 var timerDisplay = document.getElementById('timer');
 var timeBlock = document.getElementById('counter');
-
-// var resultDisplay = document.getElementById('resultMessageContainer');
 var resultMessageContainer = document.getElementById('resultMessageContainer');
 var resultMessage = document.getElementById('resultMessage');
-
 var codeBlockDisplay = document.getElementById('code-block');
 var codeBlock = document.getElementById('codeBlock-img');
 var userInputBox = document.getElementById('user-input-box');
@@ -18,7 +15,6 @@ var userAnswerForm = document.getElementById('userAnswerForm');
 var enterButton = document.getElementById('enterButton');
 var nextButtonContainer = document.getElementById('nextButtonContainer');
 var nextButton = document.getElementById('nextButton');
-
 var congratsMessage = document.getElementById('congratsMessage');
 var congratsMessage2 = document.getElementById('congratsMessage2');
 var goToResultPageContainer = document.getElementById('see-results');
